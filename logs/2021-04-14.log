@@ -1,0 +1,5 @@
+2021-04-14 23:18:45.1788 | INFO | LibToTasks.Validation.Transformator | Value 45 can be converted to System.Double
+2021-04-14 23:18:45.2055 | INFO | LibToTasks.Validation.Validator | Value 45 passed checking
+2021-04-14 23:18:45.2096 | INFO | SeventhTask.Startup | SequenceController was created (Startup.GetController)
+2021-04-14 23:18:45.2096 | INFO | SeventhTask.Controllers.SequenceController | Sequence was created (SequenceController.Display)
+2021-04-14 23:18:45.2096 | INFO | SeventhTask.Controllers.SequenceController | Sequence was outputted into console (SequenceController.Display)

@@ -1,33 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using static System.Console;
 
-using static System.Console;
+using SeventhTask;
 
-NaturalNumber number = new(12);
+Startup projectStart = new(args);
 
-foreach (int num in number) 
-{
-    Write($"{num}, ");
-}
+projectStart.Start();
 
 ReadKey();
-
-class NaturalNumber
-{
-    public const int POW = 2;
-
-    public double NumberToGetSequence { get; set; }
-
-    public NaturalNumber(double numberToGetSequence) 
-    {
-        NumberToGetSequence = numberToGetSequence;
-    }
-
-    public IEnumerator<int> GetEnumerator()
-    {
-        for (int i = 0; Math.Pow(i, POW) < NumberToGetSequence; i++)
-        {
-            yield return i;
-        }
-    }
-}
