@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Components\Builders\Abstracts\" />
     <Folder Include="UserInterface\Abstracts\" />
   </ItemGroup>
 
