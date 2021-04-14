@@ -16,7 +16,7 @@ namespace SeventhTask.Logic.Components
             MaxRange = maxRange;
         }
 
-        public IEnumerable<int> GetEnumerator() 
+        public IEnumerator<int> GetEnumerator() 
         {
             for (int i = 0; Math.Pow(i, POW_TO_NATURAL_NUMBER) < MaxRange; i++)
             {

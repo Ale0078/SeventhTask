@@ -6,6 +6,6 @@ namespace SeventhTask.Logic.Components.Interfaces
     {
         double MaxRange { get; set; }
 
-        IEnumerable<int> GetEnumerator();
+        IEnumerator<int> GetEnumerator();
     }
 }
