@@ -3,3 +3,21 @@
 2021-04-14 23:18:45.2096 | INFO | SeventhTask.Startup | SequenceController was created (Startup.GetController)
 2021-04-14 23:18:45.2096 | INFO | SeventhTask.Controllers.SequenceController | Sequence was created (SequenceController.Display)
 2021-04-14 23:18:45.2096 | INFO | SeventhTask.Controllers.SequenceController | Sequence was outputted into console (SequenceController.Display)
+2021-04-14 23:21:38.7848 | INFO | LibToTasks.Validation.Transformator | Value -34 can be converted to System.Double
+2021-04-14 23:21:38.8088 | INFO | LibToTasks.Validation.Validator | Value -34 passed checking
+2021-04-14 23:21:38.8088 | INFO | SeventhTask.Startup | SequenceController was created (Startup.GetController)
+2021-04-14 23:21:38.8088 | INFO | SeventhTask.Controllers.SequenceController | Sequence was created (SequenceController.Display)
+2021-04-14 23:21:38.8088 | INFO | SeventhTask.Controllers.SequenceController | Sequence was outputted into console (SequenceController.Display)
+2021-04-14 23:21:38.8088 | INFO | SeventhTask.Startup | Program is finalize
+2021-04-14 23:21:57.2622 | INFO | LibToTasks.Validation.Transformator | Value 34 can be converted to System.Double
+2021-04-14 23:21:57.2856 | INFO | LibToTasks.Validation.Validator | Value 34 passed checking
+2021-04-14 23:21:57.2877 | INFO | SeventhTask.Startup | SequenceController was created (Startup.GetController)
+2021-04-14 23:21:57.2877 | INFO | SeventhTask.Controllers.SequenceController | Sequence was created (SequenceController.Display)
+2021-04-14 23:21:57.2877 | INFO | SeventhTask.Controllers.SequenceController | Sequence was outputted into console (SequenceController.Display)
+2021-04-14 23:21:57.2877 | INFO | SeventhTask.Startup | Program is finalize
+2021-04-14 23:22:07.0030 | INFO | LibToTasks.Validation.Transformator | Value -34 can be converted to System.Double
+2021-04-14 23:22:07.0266 | INFO | LibToTasks.Validation.Validator | Value -34 passed checking
+2021-04-14 23:22:07.0266 | INFO | SeventhTask.Startup | SequenceController was created (Startup.GetController)
+2021-04-14 23:22:07.0266 | INFO | SeventhTask.Controllers.SequenceController | Sequence was created (SequenceController.Display)
+2021-04-14 23:22:07.0266 | INFO | SeventhTask.Controllers.SequenceController | Sequence was outputted into console (SequenceController.Display)
+2021-04-14 23:22:07.0266 | INFO | SeventhTask.Startup | Program is finalize

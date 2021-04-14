@@ -4,7 +4,7 @@ using NLog;
 using static System.Console;
 
 using SeventhTask.Controllers;
-//using SeventhTask.Messages;
+using SeventhTask.Messages;
 using SeventhTask.Logic.UserInterface.Abstracts;
 using SeventhTask.Logic.Components.Builders;
 using LibToTasks.Validation.Interfaces;
@@ -32,10 +32,10 @@ namespace SeventhTask
         {
             if (_mainArguments.Length < 1)
             {
-                _logger.Error("Too few main arguments. " +
-                    "You need enter a max range to sequence like double and less then {0} and no less then {1}", double.MaxValue, double.MinValue);
+                _logger.Error(LogMessage.STARTUP_ERROR_LENGTH +
+                    UserMessage.INSTRACTION, double.MaxValue, double.MinValue);
 
-                WriteLine("You need enter a max range to sequence like double and less then {0} and no less then {1}", double.MaxValue, double.MinValue);
+                WriteLine(UserMessage.INSTRACTION, double.MaxValue, double.MinValue);
 
                 return;
             }
@@ -48,13 +48,13 @@ namespace SeventhTask
             }
             catch(FormatException ex)
             {
-                WriteLine("You need enter a max range to sequence like double and less then {0} and no less then {1}", double.MaxValue, double.MinValue);
+                WriteLine(UserMessage.INSTRACTION, double.MaxValue, double.MinValue);
 
                 _logger.Error(ex + ex.Message + "\n" +
-                    "You need enter a max range to sequence like double and less then {0} and no less then {1}", double.MaxValue, double.MinValue);
+                    UserMessage.INSTRACTION, double.MaxValue, double.MinValue);
             }
 
-            _logger.Info("Program is finalize");
+            _logger.Info(LogMessage.FINALIZE);
         }
 
         private Controller GetController(double maxRangeOfSequence) 
@@ -66,7 +66,7 @@ namespace SeventhTask
             }
             finally 
             {
-                _logger.Info("SequenceController was created (Startup.GetController)");
+                _logger.Info(LogMessage.GET_CONTROLLER);
             }
         }
 

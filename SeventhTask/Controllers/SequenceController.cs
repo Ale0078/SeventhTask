@@ -3,6 +3,7 @@ using NLog;
 
 using static System.Console;
 
+using SeventhTask.Messages;
 using SeventhTask.Logic.Components.Interfaces;
 using SeventhTask.Logic.Components.Builders.Abstracts;
 using SeventhTask.Logic.UserInterface.Abstracts;
@@ -22,7 +23,7 @@ namespace SeventhTask.Controllers
         {
             ISequence naturalSequance = SequenceCreater.Create();
 
-            _logger.Info("Sequence was created (SequenceController.Display)");
+            _logger.Info(LogMessage.DISPLAY_CREATE_SEQUENCE);
 
             StringBuilder output = new();
 
@@ -34,14 +35,14 @@ namespace SeventhTask.Controllers
 
             WriteLine(output);
 
-            _logger.Info("Sequence was outputted into console (SequenceController.Display)");
+            _logger.Info(LogMessage.DISPLAY_OUTPUT);
         }
 
         public override void SetSequenceCreater(SequenceBuilder sequenceCreater)
         {
             SequenceCreater = sequenceCreater;
 
-            _logger.Info("New SequenceCreatere was created (SequenceController.SetSequenceCreater)");
+            _logger.Info(LogMessage.SET_SEQUENCE_CREATER);
         }
     }
 }
